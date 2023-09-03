@@ -1,0 +1,194 @@
+/* Resetear los estilos por defecto del navegador */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ... Estilos anteriores ... */
+
+/* Barra de navegación */
+nav ul {
+    list-style: none;
+    display: flex; /* Mostrar en línea horizontal */
+    justify-content: space-around; /* Espacio entre elementos */
+}
+
+nav li {
+    position: relative; /* Para elementos con submenús */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Menú desplegable */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 150px;
+    z-index: 1;
+    left: 0;
+}
+
+.dropdown-content li {
+    padding: 10px;
+}
+
+/* ... Estilos anteriores ... */
+/* ... Estilos anteriores ... */
+
+/* Imágenes en el menú desplegable */
+.dropdown-content a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content a img {
+    width: 100px; /* Define el ancho de las imágenes */
+    height: 100px; /* Define la altura de las imágenes */
+    border: 2px solid #000; /* Borde negro */
+    background-color: #fff; /* Relleno blanco */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+/* ... Estilos anteriores ... */
+/* Estilos para las imágenes en las páginas de categoría */
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Las imágenes se envuelven a la siguiente línea en pantallas pequeñas */
+    justify-content: center; /* Centrar las imágenes horizontalmente */
+    padding: 20px;
+}
+
+.image-container img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin: 10px; /* Espacio entre las imágenes en pantallas pequeñas */
+    padding: 15px; /* Aumentar el relleno de las imágenes */
+}
+
+/* Consulta de medios para reducir la separación en pantallas grandes */
+@media (min-width: 768px) {
+    .image-container img {
+        margin: 5px; /* Reducir el espacio entre las imágenes en pantallas grandes */
+    }
+}
+
+/* Estilos para el formulario */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
